@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitan no Mori - Your Compassionate Habit Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌱 Habitan no Mori</h1>
+            <p class="subtitle">Your compassionate habit companion. It's OK to give up. There's no room for being blamed here.</p>
+        </header>
+
+        <main>
+            <div class="date-display">
+                <h2 id="currentDate"></h2>
+            </div>
+
+            <div class="habits-container">
+                <div class="add-habit-section">
+                    <input type="text" id="habitInput" placeholder="Add a new habit (e.g., 'Drink water', 'Take a walk')" maxlength="50">
+                    <button id="addHabitBtn" class="add-btn">+ Add Habit</button>
+                </div>
+
+                <div id="habitsList" class="habits-list">
+                    <!-- Habits will be dynamically added here -->
+                </div>
+            </div>
+
+            <div class="encouragement-section">
+                <p id="encouragementMessage" class="encouragement">Every small step counts. You're doing great! 💪</p>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-number" id="completedToday">0</span>
+                    <span class="stat-label">Completed Today</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="totalHabits">0</span>
+                    <span class="stat-label">Total Habits</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>We keep supporting you until you become a friend with your habits. Life's getting better. 🌟</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
